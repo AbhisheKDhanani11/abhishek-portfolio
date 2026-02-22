@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Classification | Abhishek Dhanani</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-section-title { font-family: 'Space Grotesk', sans-serif; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text-color); font-size: 1.8rem; }
+        .project-text { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; }
+        .tech-list { margin-left: 20px; line-height: 2; margin-bottom: 2.5rem; font-size: 1.1rem; }
+        .tech-list li { margin-bottom: 0.8rem; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">← BACK</a>
+    </nav>
+    <section class="container">
+        <div class="card">
+            <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; color: var(--accent-color); font-family: 'Space Grotesk', sans-serif;">Fake News Classification</h1>
+            <p style="font-weight: bold; margin-bottom: 2rem; font-family: 'Space Grotesk', sans-serif; opacity: 0.8;">Spring 2025</p>
+            
+            <h2 class="project-section-title">The Intuition</h2>
+            <p class="project-text">
+                I have a deep interest in Natural Language Processing (NLP), and I wanted to push my Machine Learning skills beyond standard models by diving into the architecture that revolutionized AI: Transformers. 
+            </p>
+            <p class="project-text">
+                To truly understand how these models process language, I set out to build an end-to-end pipeline to classify news as real or fake. This project allowed me to get my hands dirty with the entire machine learning lifecycle—from constructing robust data flow pipelines to fine-tuning and retraining a pre-existing DistilBERT model on an entirely new dataset.
+            </p>
+
+            <h2 class="project-section-title">Technical Execution</h2>
+            <ul class="tech-list">
+                <li><strong>Data Engineering:</strong> Processed a massive dataset of over 44,000 articles, performing rigorous data cleaning, tokenization using AutoTokenizer, and standardized train/validation/test splitting.</li>
+                <li><strong>Model Fine-Tuning:</strong> Utilized the Hugging Face Transformers library to fine-tune a DistilBERT NLP model specifically for sequence classification.</li>
+                <li><strong>Optimization:</strong> Leveraged PyTorch with GPU acceleration and implemented mixed precision training (FP16) to ensure faster computation and drastically reduced memory usage.</li>
+                <li><strong>Performance:</strong> Successfully achieved an outstanding accuracy of <strong>99.98%</strong> on the test set, thoroughly evaluated using confusion matrices and classification reports.</li>
+            </ul>
+            
+            <div class="button-group">
+                <a href="https://github.com/AbhisheKDhanani11/Masters-Coding-Projects/blob/main/Artificial%20Intelligence/AI_Project.ipynb" target="_blank" class="btn">View Notebook ↗</a>
+                <a href="https://github.com/AbhisheKDhanani11/Masters-Coding-Projects/tree/main/Artificial%20Intelligence" target="_blank" class="btn" style="background-color: var(--card-bg); color: var(--text-color);">Project Directory 📁</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

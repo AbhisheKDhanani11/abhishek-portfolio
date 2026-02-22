@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN Debate NLP Analysis | Abhishek Dhanani</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-section-title { font-family: 'Space Grotesk', sans-serif; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text-color); font-size: 1.8rem; }
+        .project-text { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; }
+        .tech-list { margin-left: 20px; line-height: 2; margin-bottom: 2.5rem; font-size: 1.1rem; }
+        .tech-list li { margin-bottom: 0.8rem; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">← BACK TO HOME</a>
+    </nav>
+    <section class="container">
+        <div class="card">
+            <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; color: var(--accent-color); font-family: 'Space Grotesk', sans-serif;">UN General Debate NLP Analysis</h1>
+            <p style="font-weight: bold; margin-bottom: 2rem; font-family: 'Space Grotesk', sans-serif; opacity: 0.8;">Accepted: Jan 2026 | BAI'26 Conference</p>
+            
+            <h2 class="project-section-title">The Intuition</h2>
+            <p class="project-text">
+                The UN General Debate represents a massive historical archive of global diplomatic priorities. I wanted to see if we could use Data Science to map how the world's "conversation" has shifted in this dacade. By applying NLP to over 4,700 speeches, I aimed to quantify the transition from Cold War-era security concerns to modern priorities like climate change and global inequality.
+            </p>
+
+            <h2 class="project-section-title">Technical Execution</h2>
+            <ul class="tech-list">
+                <li><strong>Data Processing:</strong> Cleaned and tokenized a dataset of 4,700+ speeches using Python, NLTK, and spaCy to handle diverse linguistic patterns.</li>
+                <li><strong>Topic Modeling:</strong> Implemented Latent Dirichlet Allocation (LDA) and Non-Negative Matrix Factorization (NMF) to identify dominant themes across decades.</li>
+                <li><strong>Visualization:</strong> Created histograms, word clouds, and time-series plots to track the rise of sustainability and regional focus variations.</li>
+                <li><strong>Statistical Analysis:</strong> Leveraged Chi-Square tests to validate significant differences in keyword usage between different global groups.</li>
+            </ul>
+            
+            <div class="button-group">
+                <a href="assets/NLP_paper.pdf" target="_blank" class="btn">Read Accepted Paper ↗</a>
+                <a href="https://github.com/AbhisheKDhanani11/UN-General-Debate-NLP-Analysis" target="_blank" class="btn" style="background-color: var(--card-bg); color: var(--text-color);">GitHub Repo 📁</a>
+            </div>
+        </div>
+    </section>
+
+    </body>
+</html>

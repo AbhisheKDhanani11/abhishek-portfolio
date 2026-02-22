@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailCast | Abhishek Dhanani</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-section-title { font-family: 'Space Grotesk', sans-serif; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text-color); font-size: 1.8rem; }
+        .project-text { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; }
+        .tech-list { margin-left: 20px; line-height: 2; margin-bottom: 2.5rem; font-size: 1.1rem; }
+        .tech-list li { margin-bottom: 0.8rem; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">← BACK</a>
+    </nav>
+    <section class="container">
+        <div class="card">
+            <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; color: var(--accent-color); font-family: 'Space Grotesk', sans-serif;">MailCast: Email to Audio</h1>
+            <p style="font-weight: bold; margin-bottom: 2rem; font-family: 'Space Grotesk', sans-serif; opacity: 0.8;">March 2025</p>
+            
+            <h2 class="project-section-title">The Intuition</h2>
+            <p class="project-text">
+                To keep up with the rapidly evolving AI landscape, I subscribed to over 15+ daily newsletters. However, sitting down to read through all of them every single day quickly became too time-consuming. I needed a way to consume this information on the go. 
+            </p>
+            <p class="project-text">
+                That's how MailCast was born. I built this application to automatically fetch the top unread emails from my account and convert them into engaging, podcast-style audio tracks. Now, I can listen to my daily tech updates anywhere, anytime—turning my commute into a learning session.
+            </p>
+
+            <h2 class="project-section-title">Technical Execution</h2>
+            <ul class="tech-list">
+                <li><strong>Email Integration:</strong> Developed a Python pipeline integrating the Gmail API for seamless email retrieval and used BeautifulSoup for robust text preprocessing.</li>
+                <li><strong>Script Generation:</strong> Utilized Large Language Models (LLMs) to intelligently parse raw email content and generate conversational podcast scripts.</li>
+                <li><strong>Audio Synthesis:</strong> Implemented OpenAI's Text-to-Speech (TTS) API and PyDub to process and output high-quality audio files.</li>
+                <li><strong>Scalability:</strong> Built OAuth2 authentication and chunked text processing logic to successfully handle API token limits for large datasets.</li>
+            </ul>
+            
+            <div class="button-group">
+                <a href="https://github.com/AbhisheKDhanani11/Masters-Coding-Projects/blob/main/Projects/Mailcast.ipynb" target="_blank" class="btn">View Notebook ↗</a>
+                <a href="https://github.com/AbhisheKDhanani11/Masters-Coding-Projects/tree/main/Projects" target="_blank" class="btn" style="background-color: var(--card-bg); color: var(--text-color);">Project Directory 📁</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

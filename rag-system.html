@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System | Abhishek Dhanani</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-section-title { font-family: 'Space Grotesk', sans-serif; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text-color); font-size: 1.8rem; }
+        .project-text { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; }
+        .tech-list { margin-left: 20px; line-height: 2; margin-bottom: 2.5rem; font-size: 1.1rem; }
+        .tech-list li { margin-bottom: 0.8rem; }
+        .button-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">← BACK</a>
+    </nav>
+    <section class="container">
+        <div class="card">
+            <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; color: var(--accent-color); font-family: 'Space Grotesk', sans-serif;">RAG System for Document Summarization</h1>
+            <p style="font-weight: bold; margin-bottom: 2rem; font-family: 'Space Grotesk', sans-serif; opacity: 0.8;">March 2025</p>
+            
+            <h2 class="project-section-title">The Intuition</h2>
+            <p class="project-text">
+                When I first entered the Generative AI space, I wanted a hands-on way to truly understand how Large Language Models operate under the hood. I kept hearing about Retrieval-Augmented Generation (RAG) and decided the best way to learn was to build one from scratch just for fun.
+            </p>
+            <p class="project-text">
+                This project served as my playground to explore the LLM ecosystem. Through building it, I successfully wrapped my head around core concepts like vector embeddings, utilizing the LangChain framework, and interacting with OpenAI's APIs to give models contextual memory over lengthy documents.
+            </p>
+
+            <h2 class="project-section-title">Technical Execution</h2>
+            <ul class="tech-list">
+                <li><strong>Architecture Design:</strong> Designed a complete RAG pipeline in Python specifically tailored to ingest, preprocess, and summarize lengthy legal documents.</li>
+                <li><strong>Vector Storage:</strong> Processed raw text and stored semantic representations into a Chroma vector database for highly efficient semantic search.</li>
+                <li><strong>LLM Integration:</strong> Integrated OpenAI embeddings and GPT models via LangChain to retrieve relevant document chunks and generate highly accurate, concise summaries.</li>
+                <li><strong>Advanced Retrieval:</strong> Built a multi-vector retriever pipeline to combine original text nodes with summarized nodes, drastically enhancing retrieval accuracy and response coherence.</li>
+            </ul>
+            
+            <div class="button-group">
+                <a href="https://github.com/AbhisheKDhanani11/Masters-Coding-Projects/blob/main/Projects/Rag_System.ipynb" target="_blank" class="btn">View Notebook ↗</a>
+                <a href="https://github.com/AbhisheKDhanani11/Masters-Coding-Projects/tree/main/Projects" target="_blank" class="btn" style="background-color: var(--card-bg); color: var(--text-color);">Project Directory 📁</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

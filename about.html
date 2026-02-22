@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Abhishek Dhanani</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-text-content p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+        
+        /* Fixed Timeline specific styles */
+        .timeline-item { margin-bottom: 2rem; border-left: 4px solid var(--border-color); padding-left: 2rem; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -14px; top: -2px; width: 20px; height: 20px; background-color: var(--accent-color); border: 3px solid var(--border-color); border-radius: 50%; }
+        .timeline-date { font-weight: bold; font-family: 'Space Grotesk', sans-serif; color: var(--accent-color); margin-bottom: 0.5rem; display: block; }
+        .timeline-title { font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.5rem; color: var(--text-color); }
+        .timeline-subtitle { font-weight: 600; margin-bottom: 1rem; color: var(--text-color); opacity: 0.8; }
+        
+        .coursework-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; list-style: none; }
+        .coursework-list li { background-color: var(--card-bg); border: 2px solid var(--border-color); padding: 0.2rem 0.6rem; font-size: 0.85rem; font-weight: 600; border-radius: 4px; }
+        
+        /* Highlight text for the bottom section */
+        .text-highlight { color: var(--accent-color); font-weight: bold; font-family: 'Space Grotesk', sans-serif; }
+        
+        /* LinkedIn Inline Link */
+        .linkedin-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-color); font-weight: bold; font-family: 'Space Grotesk', sans-serif; text-decoration: underline; transition: transform 0.2s; }
+        .linkedin-link:hover { transform: translateY(-2px); }
+        .linkedin-link svg { width: 22px; height: 22px; fill: currentColor; }
+    </style>
+</head>
+<body>
+
+	<nav>
+    		<a href="index.html" class="nav-logo">← Back to Home</a>
+    			<ul class="nav-links">
+        			<li><a href="index.html#projects">Projects</a></li>
+	        		<li><a href="index.html#contact">Contact</a></li>
+        			<li><button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button></li>
+    			</ul>
+	</nav>
+
+    <section class="container">
+        <div class="center-title"><h1 class="section-title">The Developer Behind The Keyboard</h1></div>
+        
+        <div class="card about-text-content">
+            <h2 style="font-family: 'Space Grotesk', sans-serif; margin-bottom: 1.5rem; color: var(--accent-color); font-size: 2rem;">How it all started</h2>
+            <p>
+                My journey into the world of technology began during my undergraduate studies at Government Engineering College in Gandhinagar, India. While I was initially exploring the broad landscape of Computer Science—wrestling with software engineering principles and database management—I quickly realized that my true fascination lay in the logic of algorithms and advanced mathematics. 
+            </p>
+            <p>
+                The turning point happened when I started working with raw data. The idea that you could take thousands of chaotic data points and extract a clear, actionable narrative felt like a superpower. That curiosity led me to dive headfirst into Python, Pandas, and Scikit-learn, shifting my focus entirely toward the analytical side of tech.
+            </p>
+
+            <h2 style="font-family: 'Space Grotesk', sans-serif; margin-top: 3rem; margin-bottom: 1.5rem; color: var(--accent-color); font-size: 2rem;">Where I Am Now</h2>
+            <p>
+                Fast forward to today, I have crossed the globe and am currently based in Connecticut, thriving in my Master's program in Computer Science (Data Science track) at Sacred Heart University. My focus has evolved from basic data analysis to building complex, intelligent systems. 
+            </p>
+            <p>
+                Whether it's tinkering with Hugging Face Transformers to detect fake news, building RAG systems for document summarization, or engineering API pipelines, my goal is to bridge the gap between theoretical machine learning and practical, real-world applications. 
+            </p>
+            <p style="font-weight: bold; padding-top: 1rem;">
+                🚀 I am currently looking for full-time opportunities as an AI/ML Engineer where I can contribute to cutting-edge projects and continue to grow.
+            </p>
+        </div>
+    </section>
+
+    <section class="container" style="padding-top: 0;">
+        <div class="center-title"><h2 class="section-title">Experience</h2></div>
+        
+        <div class="card">
+            <div class="timeline-item">
+                <span class="timeline-date">Jan 2023 - July 2023</span>
+                <h3 class="timeline-title">Data Analysis Intern</h3>
+                <p class="timeline-subtitle">Infolabz Pvt. Ltd. | Ahmedabad, India</p>
+                <p>
+                    During my time at Infolabz, I cut my teeth on real-world data. I was responsible for cleaning and analyzing large datasets using Pandas and NumPy to identify market trends. I contributed directly to the development of regression and classification models using Scikit-learn. Furthermore, I worked closely with the marketing team to translate complex data into visual reports using Tableau and Matplotlib, directly supporting strategic decision-making that resulted in improved sales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding-top: 0;">
+        <div class="center-title"><h2 class="section-title">Education</h2></div>
+        
+        <div class="card">
+            <div class="timeline-item">
+                <span class="timeline-date">Aug 2024 - Dec 2025</span>
+                <h3 class="timeline-title">Master's in Computer Science (Data Science Track)</h3>
+                <p class="timeline-subtitle">Sacred Heart University | Fairfield, CT</p>
+                <p><strong>Current GPA: 3.9</strong></p>
+                <ul class="coursework-list">
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Big Data Analysis</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">Aug 2020 - May 2023</span>
+                <h3 class="timeline-title">Bachelor's in Computer Science</h3>
+                <p class="timeline-subtitle">Government Engineering College | Gandhinagar, India</p>
+                <p><strong>GPA: 3.9</strong></p>
+                <ul class="coursework-list">
+                    <li>Algorithms</li>
+                    <li>Database Management</li>
+                    <li>Advanced Mathematics</li>
+                    <li>Software Engineering</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding-top: 0; text-align: center;">
+        
+        <p style="font-size: 1.2rem; max-width: 900px; margin: 0 auto 2.5rem auto; line-height: 1.8;">
+            I am deeply committed to continuously learning and refining my technical skills. Whether it is exploring emerging <span class="text-highlight">AI & Data Technologies</span>, architecting scalable solutions, or collaborating with forward-thinking <span class="text-highlight">Professionals</span>, I am always seeking ways to deliver impact. If you are looking to build data-driven products or simply want to chat about tech, 
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" class="linkedin-link">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                Let's Connect!
+            </a>
+        </p>
+
+        <div>
+            <a href="assets/AbhishekDhananiResume.pdf" target="_blank" class="btn" style="border-radius: 50px; padding: 1rem 2.5rem; font-size: 1.15rem; box-shadow: 4px 4px 0px var(--shadow-color);">
+                DOWNLOAD RESUME 📄
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-socials" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+		<a href="https://www.linkedin.com/in/abhishekdhanani/" target="_blank" class="icon-btn" aria-label="LinkedIn">
+			<svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+		</a>
+		<a href="https://github.com/AbhisheKDhanani11" target="_blank" class="icon-btn" aria-label="GitHub">
+			<svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+		</a>
+		<a href="mailto:abhishekdhanani.11@gmail.com" class="icon-btn" aria-label="Email">
+			<svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.833l5.567-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+		</a>
+	</div>
+	<div style="font-family: 'Space Grotesk', sans-serif; font-weight: bold;">
+		<p>abhishekdhanani.11@gmail.com</p>
+        	<p>+1 (203) 821-1581</p>
+        	<p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7;">Created by Abhishek Dhanani</p>
+    	</div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.documentElement;
+
+        // Check for saved theme preference or default to light
+        if (localStorage.getItem('theme') === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            toggleBtn.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                toggleBtn.textContent = '🌙';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggleBtn.textContent = '☀️';
+            }
+        });
+    </script>
+</body>
+</html>
